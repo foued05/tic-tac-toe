@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <section class="page-section portfolio">
+        <div class="container">
+            <a class="btn btn-xl btn-primary" onclick="restart();">
+                Restart
+            </a>
+            <div class="row justify-content-center">
+                
+                <table class="justify-content-center">
+                    <tr>
+                        <td class="col-md-1 col-lg-1 mb-4">
+                            <div style="box-shadow: black 2px 2px;">
+                                <div class="portfolio-item mx-auto" style="margin: 5px;">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  onclick="jeu('11', 0);">
+                                    </div>
+                                    <img class="img-fluid" id="11" src="assets/img/portfolio/nil.png" height="500px" width="500px" alt="..." />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-md-1 col-lg-1 mb-4">
+                            <div style="box-shadow: black 2px 2px;">
+                                <div class="portfolio-item mx-auto" style="margin: 5px;">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  onclick="jeu('12', 1);">
+                                    </div>
+                                    <img class="img-fluid" id="12" src="assets/img/portfolio/nil.png" height="500px" width="500px" alt="..." />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-md-1 col-lg-1 mb-4">
+                            <div style="box-shadow: black 0px 2px;">
+                                <div class="portfolio-item mx-auto" style="margin: 5px;">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  onclick="jeu('13', 2);">
+                                    </div>
+                                    <img class="img-fluid" id="13" src="assets/img/portfolio/nil.png" height="500px" width="500px" alt="..." />
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-1 col-lg-1 mb-4">
+                            <div style="box-shadow: black 2px 2px;">
+                                <div class="portfolio-item mx-auto" style="margin: 5px;">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  onclick="jeu('21', 3);">
+                                    </div>
+                                    <img class="img-fluid" id="21" src="assets/img/portfolio/nil.png" height="500px" width="500px" alt="..." />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-md-1 col-lg-1 mb-4">
+                            <div style="box-shadow: black 2px 2px;">
+                                <div class="portfolio-item mx-auto" style="margin: 5px;">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  onclick="jeu('22', 4);">
+                                    </div>
+                                    <img class="img-fluid" id="22" src="assets/img/portfolio/nil.png" height="500px" width="500px" alt="..." />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-md-1 col-lg-1 mb-4">
+                            <div style="box-shadow: black 0px 2px;">
+                                <div class="portfolio-item mx-auto" style="margin: 5px;">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  onclick="jeu('23', 5);">
+                                    </div>
+                                    <img class="img-fluid" id="23" src="assets/img/portfolio/nil.png" height="500px" width="500px" alt="..." />
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-1 col-lg-1 mb-4">
+                            <div style="box-shadow: black 2px 0px;">
+                                <div class="portfolio-item mx-auto" style="margin: 5px;">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  onclick="jeu('31', 6);">
+                                    </div>
+                                    <img class="img-fluid" id="31" src="assets/img/portfolio/nil.png" height="500px" width="500px" alt="..." />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-md-1 col-lg-1 mb-4">
+                            <div style="box-shadow: black 2px 0px;">
+                                <div class="portfolio-item mx-auto" style="margin: 5px;">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  onclick="jeu('32', 7);">
+                                    </div>
+                                    <img class="img-fluid" id="32" src="assets/img/portfolio/nil.png" height="500px" width="500px" alt="..." />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-md-1 col-lg-1 mb-4">
+                            <div>
+                                <div class="portfolio-item mx-auto" style="margin: 5px;">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" onclick="jeu('33', 8);">
+                                    </div>
+                                    <img class="img-fluid" id="33" src="assets/img/portfolio/nil.png" height="500px" width="500px" alt="..."/>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="dist/fich.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
