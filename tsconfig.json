@@ -3,7 +3,8 @@
         "outDir": "dist",
         "target": "ES2015",
         "noEmitOnError": true,
-        "strict": true
+        "strict": true,
+        "declaration": true
     },
     "files": [
         "src/fich.ts"

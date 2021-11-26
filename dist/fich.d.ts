@@ -1,0 +1,10 @@
+declare let x: string;
+declare let gagne: boolean;
+declare let ch_gagne: string;
+declare function stateDisp(): string;
+declare function initialState(): string[];
+declare function stateEmptySlot(plateau: string[]): string[];
+declare function stateDepth(t: string[]): string;
+declare function restart(): void;
+declare function jeu(p: string, i: number): void;
+declare let plateau: string[];
